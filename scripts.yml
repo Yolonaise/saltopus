@@ -1,0 +1,8 @@
+scripts:
+  # Make it cache
+  cache: 
+    desc: cache modules
+    cmd: deno cache --unstable deps.ts
+    tsconfig: tsconfig.json
+    allow:
+      - net

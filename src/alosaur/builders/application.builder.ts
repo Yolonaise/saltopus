@@ -23,8 +23,9 @@ export default class ApplicationBuilder {
     return this;
   }
 
-  useError(handler: ErrorHandler) {
+  useError(handler: ErrorHandler): ApplicationBuilder {
     this.errorHandler = handler;
+    return this
   }
 
   build(): App<unknown> {
